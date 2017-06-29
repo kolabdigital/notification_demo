@@ -1,0 +1,73 @@
+{
+  "name": "birthdays",
+  "version": "0.1.0",
+  "private": true,
+  "author": "kolab",
+  "description": "notification app",
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "electron": "^1.4.14",
+    "electron-builder": "^19.5.1",
+    "foreman": "^2.0.0",
+    "react-scripts": "0.8.5"
+  },
+  "dependencies": {
+    "class-autobind": "^0.1.4",
+    "electron-devtools-installer": "^2.2.0",
+    "history": "^4.6.1",
+    "node-notifier": "^5.1.2",
+    "node-schedule": "^1.2.3",
+    "pouchdb": "^6.2.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.5",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "react-router-redux": "next",
+    "redux": "^3.6.0",
+    "redux-devtools": "^3.4.0",
+    "redux-devtools-dock-monitor": "^1.1.2",
+    "redux-devtools-log-monitor": "^1.3.0",
+    "redux-pouchdb": "^0.1.1",
+    "redux-slider-monitor": "^2.0.0-0",
+    "redux-thunk": "^2.2.0",
+    "to-camel-case": "^1.0.0",
+    "to-snake-case": "^1.0.0"
+  },
+  "homepage": "./",
+  "main": "public/electron.js",
+  "scripts": {
+    "start": "nf start -p 3000",
+    "electron": "electron .",
+    "electron-build": "build",
+    "electron-dist-mac": "build --mac",
+    "electron-dist-linux": "build --linux",
+    "electron-dist-win": "build --windows",
+    "electron-dist-win-linux": "build -wl",
+    "electron-pack": "build --em.main=build/electron.js",
+    "electron-start": "node src/electron-wait-react",
+    "preelectron-dist-mac": "yarn react-build",
+    "preelectron-dist-linux": "yarn react-build",
+    "preelectron-dist-win": "yarn react-build",
+    "preelectron-dist-win-linux": "yarn react-build",
+    "preelectron-pack": "yarn react-build",
+    "react-build": "react-scripts build",
+    "react-eject": "react-scripts eject",
+    "react-start": "react-scripts start",
+    "react-test": "react-scripts test --env=jsdom"
+  },
+  "build": {
+    "appId": "com.electron.birthdays",
+    "mac": {
+      "category": "your.app.category.type"
+    },
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
+  },
+  "postinstall": "install-app-deps"
+}

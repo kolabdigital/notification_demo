@@ -1,0 +1,52 @@
+/* susy */
+@import "susy";
+
+/* default elements */
+$susy: (
+  flow: ltr,
+  math: fluid, //static
+  output: float, //isolate
+  gutter-position: after,
+  container: auto,
+  container-position: center,
+  columns: 12,
+  gutters: 0,
+  column-width: false,
+  global-box-sizing: border-box,
+  last-flow: to,
+  debug: (
+    image: false,
+    color: rgba(#66f, .25),
+    output: background,
+    toggle: top right,
+  ),
+);
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,700&subset=latin-ext');
+
+/* variables */
+$basic_font: 'Cabin', sans-serif;
+$basic_font_normal: 400;
+$basic_font_bold: 700;
+$basic_font_size: 16 !default;
+$basic_font_size_px: #{$basic_font_size}px;
+$basic_line_height: 20px;
+
+$font: $basic_font_normal $basic_font_size_px $basic_font;
+
+// $column_padding: 50px;
+
+/* section colours */
+$accent: #e45a30;
+$background: #d6d6d6;
+$color_text: #5d6069;
+$color_text2: #ffffff;
+$divider: #aeb2c3;
+$primary: #718ba5;
+$shadow: rgba(0, 0, 0, 0.15);
+$shadow2: rgba(0, 0, 0, 0.1);
+$shadow3: rgba(0, 0, 0, 0.075);
+
+/* Border box */
+@include border-box-sizing;

@@ -45,6 +45,6 @@
     <key>NSHumanReadableCopyright</key>
     <string>Copyright © 2017 kolab</string>
     <key>AsarIntegrity</key>
-    <string>{"checksums":{"app.asar":"2MZTSVEuzcNSfRpwFDBOrr3yO2ND/43cawYeqC8ZlBealdt59AceeFJAx8Gn/nQOoqPtDV3RRIN2MDkVEZXndw==","electron.asar":"eqM7Y2TcnO+I/R/VJhKlzeJ2yp1oEwglS6yUikjd21591JPVWQuUqYrY/lL23VTmhlJdSLGvvv8y0ky/Hb17lA=="}}</string>
+    <string>{"checksums":{"app.asar":"Yjd2rnXOM/c8uL1tjzR/Xj923++7qrEEAsRit2QxPK4pq4bVO+CMCnjOtwZ2MAyQWuDSrjwojeVoFVFqD+bffw==","electron.asar":"eqM7Y2TcnO+I/R/VJhKlzeJ2yp1oEwglS6yUikjd21591JPVWQuUqYrY/lL23VTmhlJdSLGvvv8y0ky/Hb17lA=="}}</string>
   </dict>
 </plist>

@@ -13,7 +13,7 @@ const app = electron.app;
 require('./electron/notify');
 
 
-if (process.env.NODE_ENV !== 'production') {
+if (process.env.ELECTRON_ENV === 'dev' || process.env.ELECTRON_ENV === 'development') {
   require('./electron/devtools');
 }
 // To stop garbage collection

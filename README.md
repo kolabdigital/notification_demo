@@ -1,5 +1,7 @@
 # Notifier demo app
 
+![alt notification demo]('/gifs/notify.gif')
+
 ## Installation
 Clone or download this repository and run `npm install` from teh repository folder.
 
